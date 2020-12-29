@@ -3,7 +3,7 @@ package allcoin
 import (
 	"encoding/json"
 	"errors"
-	. "github.com/nntaoli-project/goex"
+	. "github.com/zjmhaoku01/goex"
 	"log"
 	"net/http"
 	"net/url"

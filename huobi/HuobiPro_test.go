@@ -1,9 +1,9 @@
 package huobi
 
 import (
-	"github.com/nntaoli-project/goex"
-	"github.com/nntaoli-project/goex/internal/logger"
 	"github.com/stretchr/testify/assert"
+	"github.com/zjmhaoku01/goex"
+	"github.com/zjmhaoku01/goex/internal/logger"
 	"net"
 	"net/http"
 	"net/url"
@@ -126,7 +126,7 @@ func TestHuobiPro_GetOneOrder(t *testing.T) {
 func TestHuobiPro_GetOrderHistorys(t *testing.T) {
 	ords, err := hbpro.GetOrderHistorys(
 		goex.NewCurrencyPair2("BTC_USDT"),
-		goex.OptionalParameter{}.Optional("start-date","2020-11-30"))
+		goex.OptionalParameter{}.Optional("start-date", "2020-11-30"))
 	t.Log(err)
 	t.Log(ords)
 }

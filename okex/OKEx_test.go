@@ -1,9 +1,9 @@
 package okex
 
 import (
-	"github.com/nntaoli-project/goex"
-	"github.com/nntaoli-project/goex/internal/logger"
 	"github.com/stretchr/testify/assert"
+	"github.com/zjmhaoku01/goex"
+	"github.com/zjmhaoku01/goex/internal/logger"
 	"net/http"
 	"testing"
 	"time"

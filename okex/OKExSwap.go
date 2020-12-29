@@ -4,13 +4,13 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/nntaoli-project/goex/internal/logger"
+	"github.com/zjmhaoku01/goex/internal/logger"
 	"net/url"
 	"strconv"
 	"strings"
 	"time"
 
-	. "github.com/nntaoli-project/goex"
+	. "github.com/zjmhaoku01/goex"
 )
 
 const (

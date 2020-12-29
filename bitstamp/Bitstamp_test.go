@@ -1,8 +1,8 @@
 package bitstamp
 
 import (
-	"github.com/nntaoli-project/goex"
 	"github.com/stretchr/testify/assert"
+	"github.com/zjmhaoku01/goex"
 	"log"
 	"net/http"
 	"testing"

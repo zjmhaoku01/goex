@@ -1,7 +1,7 @@
 package bitget
 
 import (
-	"github.com/nntaoli-project/goex"
+	"github.com/zjmhaoku01/goex"
 	"net/http"
 	"net/url"
 	"testing"
