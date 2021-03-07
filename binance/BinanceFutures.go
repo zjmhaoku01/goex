@@ -601,7 +601,7 @@ func (bs *BinanceFutures) adaptToSymbol(pair CurrencyPair, contractType string) 
 	}
 
 	if contractType == SWAP_CONTRACT {
-		return fmt.Sprintf("%s_PERP", pair.AdaptUsdtToUsd().ToSymbol("")), nil
+		return fmt.Sprintf("%s", pair.AdaptUsdtToUsd().ToSymbol("")), nil
 	}
 
 	if bs.exchangeInfo == nil || len(bs.exchangeInfo.Symbols) == 0 {
