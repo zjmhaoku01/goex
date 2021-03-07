@@ -4,8 +4,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	. "github.com/zjmhaoku01/goex"
-	"github.com/zjmhaoku01/goex/internal/logger"
 	"math"
 	"net/http"
 	"net/url"
@@ -13,6 +11,9 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	. "github.com/zjmhaoku01/goex"
+	"github.com/zjmhaoku01/goex/internal/logger"
 )
 
 type BaseResponse struct {
@@ -80,8 +81,9 @@ type BinanceFutures struct {
 }
 
 func NewBinanceFutures(config *APIConfig) *BinanceFutures {
+
 	if config.Endpoint == "" {
-		config.Endpoint = "https://dapi.binance.com"
+		config.Endpoint = "https://fapi.binance.com"
 	}
 
 	if config.HttpClient == nil {
@@ -93,7 +95,7 @@ func NewBinanceFutures(config *APIConfig) *BinanceFutures {
 		base:   NewWithConfig(config),
 	}
 
-	bs.base.apiV1 = config.Endpoint + "/dapi/v1/"
+	bs.base.apiV1 = config.Endpoint + "/fapi/v1/"
 
 	go bs.GetExchangeInfo()
 
